@@ -1,0 +1,1184 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/gatsby-remark-draw-demo/component---src-layouts-index-js-0d2438fc3e44c061000c.js" as="script"/><link rel="preload" href="/gatsby-remark-draw-demo/component---src-templates-blog-post-js-3ffd030823ef9e4f7053.js" as="script"/><link rel="preload" href="/gatsby-remark-draw-demo/path---graphviz-628f127593d8cbc11841.js" as="script"/><link rel="preload" href="/gatsby-remark-draw-demo/app-96c3fd8696067c76723e.js" as="script"/><link rel="preload" href="/gatsby-remark-draw-demo/commons-6e82eaae3f56c620a9ec.js" as="script"/><link rel="alternate" type="application/rss+xml" href="/gatsby-remark-draw-demo/rss.xml"/><title data-react-helmet="true">GraphViz Demo | gatsby-remark-draw plugin demo</title><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}svg{width:100%;}</style><style id="gatsby-inlined-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-remark-draw-demo/static/montserrat-latin-100.50d27986.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-100.5e334eff.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-100italic.8c070533.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-100italic.03e19243.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-remark-draw-demo/static/montserrat-latin-200.4343d3d9.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-200.f2022ecd.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-200italic.116c4c4b.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-200italic.89614a60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-remark-draw-demo/static/montserrat-latin-300.d2ad295b.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-300.3a371ee0.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-300italic.f6b6bf24.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-300italic.16521668.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-remark-draw-demo/static/montserrat-latin-400.240a8444.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-400.b20cc131.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-400italic.86172bb8.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-400italic.9405e787.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-remark-draw-demo/static/montserrat-latin-500.fb8d6b71.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-500.50825d47.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-500italic.c0a555a4.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-500italic.635de59c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-remark-draw-demo/static/montserrat-latin-600.d5615136.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-600.f300da4f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-600italic.10f29d13.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-600italic.2bc37d86.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-remark-draw-demo/static/montserrat-latin-700.7d77e1f0.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-700.81826529.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-700italic.1dd2b53f.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-700italic.c162d257.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-remark-draw-demo/static/montserrat-latin-800.d4e7bf86.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-800.895aadbf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-800italic.fc0cbe44.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-800italic.b3362875.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-remark-draw-demo/static/montserrat-latin-900.c8bdd772.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-900.1b99ef78.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-remark-draw-demo/static/montserrat-latin-900italic.cb72c1f9.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/montserrat-latin-900italic.b78bb9f8.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-remark-draw-demo/static/merriweather-latin-300.f015f1e9.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-300.92dfe81b.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-remark-draw-demo/static/merriweather-latin-300italic.7fd86b32.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-300italic.878b76f5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-remark-draw-demo/static/merriweather-latin-400.12dbf4c0.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-400.1fffad22.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-remark-draw-demo/static/merriweather-latin-400italic.1e0d3e81.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-400italic.de18d4c4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-remark-draw-demo/static/merriweather-latin-700.dc8fec81.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-700.d7d2ed8e.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-remark-draw-demo/static/merriweather-latin-700italic.b7b7e5da.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-700italic.6210a5fc.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-remark-draw-demo/static/merriweather-latin-900.43f870d5.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-900.8f3806df.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-remark-draw-demo/static/merriweather-latin-900italic.168c1ab2.woff2) format("woff2"),url(/gatsby-remark-draw-demo/static/merriweather-latin-900italic.ae7778f0.woff) format("woff")}</style></head><body><div id="___gatsby"><div style="max-width:42rem;margin-left:auto;margin-right:auto;padding:2.625rem 1.3125rem;" data-reactroot="" data-reactid="1" data-react-checksum="1350979101"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem;" data-reactid="2"><a style="box-shadow:none;text-decoration:none;color:inherit;" href="/gatsby-remark-draw-demo/" data-reactid="3">gatsby-remark-draw demo</a></h3><div data-reactid="4"><!-- react-empty: 5 --><h1 data-reactid="6">GraphViz Demo</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem;" data-reactid="7">March 22, 2018</p><div data-reactid="8"><p>Examples taken from the <a href="http://graphs.grevian.org/example">DOT pocket reference</a></p>
+<h2>Example 1: Simple Graph</h2>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="199pt" height="260pt"
+ viewBox="0.00 0.00 199.00 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 195,-256 195,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="137" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="137" y="-158.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="99" y="-86.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="black" d="M128.187,-144.765C122.048,-133.456 113.894,-118.437 107.766,-107.147"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="126" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="126" y="-14.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a&#45;&#45;c -->
+<g id="edge3" class="edge"><title>a&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M137.353,-143.895C137.551,-125.944 137.383,-96.9239 135,-72 133.845,-59.9221 131.542,-46.4435 129.555,-36.1014"/>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge2" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M105.399,-72.411C109.64,-61.4141 115.189,-47.0274 119.46,-35.9562"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- d&#45;&#45;c -->
+<g id="edge4" class="edge"><title>d&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M45.1581,-76.1609C63.0209,-63.5307 90.1341,-44.3597 107.957,-31.7577"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="164" y="-230.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- e&#45;&#45;a -->
+<g id="edge6" class="edge"><title>e&#45;&#45;a</title>
+<path fill="none" stroke="black" d="M157.601,-216.411C153.36,-205.414 147.811,-191.027 143.54,-179.956"/>
+</g>
+<!-- e&#45;&#45;c -->
+<g id="edge5" class="edge"><title>e&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M167.654,-215.908C169.676,-205.569 171.981,-192.09 173,-180 177.123,-131.097 167.619,-117.805 150,-72 145.213,-59.5558 138.982,-45.8536 134.069,-35.4992"/>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 2: K6</h2>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="255pt" height="404pt"
+ viewBox="0.00 0.00 254.93 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 250.93,-400 250.93,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="123" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="123" y="-374.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="123" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="123" y="-302.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="black" d="M123,-359.697C123,-348.846 123,-334.917 123,-324.104"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-230.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a&#45;&#45;c -->
+<g id="edge7" class="edge"><title>a&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M134.14,-361.505C141.48,-351.081 151.149,-336.931 159,-324 174.032,-299.24 189.627,-269.425 198.815,-251.356"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-158.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge8" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M142.085,-364.913C170.872,-345.353 224.048,-303.687 243,-252 248.508,-236.978 247.703,-231.293 243,-216 238.619,-201.753 228.961,-187.9 220.75,-177.931"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="141" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="141" y="-86.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- a&#45;&#45;e -->
+<g id="edge9" class="edge"><title>a&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M109.25,-362.069C101.039,-352.1 91.381,-338.247 87,-324 82.2972,-308.707 84.8661,-303.857 87,-288 96.223,-219.465 122.727,-141.036 134.834,-107.551"/>
+</g>
+<!-- f -->
+<g id="node6" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="141" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="141" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- a&#45;&#45;f -->
+<g id="edge6" class="edge"><title>a&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M102.689,-365.908C67.7536,-345.172 0,-296.969 0,-235 0,-235 0,-235 0,-161 0,-94.2958 79.3125,-47.7729 118.969,-28.6805"/>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge2" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M139.196,-291.503C154.071,-279.108 175.995,-260.838 190.854,-248.455"/>
+</g>
+<!-- b&#45;&#45;d -->
+<g id="edge10" class="edge"><title>b&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M131.185,-288.644C140.373,-270.575 155.968,-240.76 171,-216 178.851,-203.069 188.52,-188.919 195.86,-178.495"/>
+</g>
+<!-- b&#45;&#45;e -->
+<g id="edge11" class="edge"><title>b&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M124.443,-287.849C127.813,-247.78 136.173,-148.383 139.551,-108.232"/>
+</g>
+<!-- b&#45;&#45;f -->
+<g id="edge12" class="edge"><title>b&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M117.545,-288.151C105.797,-249.131 81.0306,-149.947 105,-72 109.381,-57.7531 119.039,-43.8997 127.25,-33.9312"/>
+</g>
+<!-- c&#45;&#45;d -->
+<g id="edge3" class="edge"><title>c&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M207,-215.697C207,-204.846 207,-190.917 207,-180.104"/>
+</g>
+<!-- c&#45;&#45;e -->
+<g id="edge13" class="edge"><title>c&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M194.781,-217.458C187.182,-207.246 177.629,-193.35 171,-180 159.107,-156.049 150.14,-126.26 145.231,-107.942"/>
+</g>
+<!-- c&#45;&#45;f -->
+<g id="edge14" class="edge"><title>c&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M220.75,-218.069C228.961,-208.1 238.619,-194.247 243,-180 247.703,-164.707 247.411,-159.38 243,-144 228.946,-94.998 183.321,-52.4917 158.118,-32.0122"/>
+</g>
+<!-- d&#45;&#45;e -->
+<g id="edge4" class="edge"><title>d&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M193.003,-146.155C181.803,-134.276 166.172,-117.697 154.977,-105.824"/>
+</g>
+<!-- d&#45;&#45;f -->
+<g id="edge15" class="edge"><title>d&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M202.769,-144.058C197.86,-125.74 188.893,-95.9509 177,-72 170.371,-58.65 160.818,-44.7545 153.219,-34.5423"/>
+</g>
+<!-- e&#45;&#45;f -->
+<g id="edge5" class="edge"><title>e&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M141,-71.6966C141,-60.8463 141,-46.9167 141,-36.1043"/>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 3: Simple Digraph</h2>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="89pt" height="260pt"
+ viewBox="0.00 0.00 89.00 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 85,-256 85,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="54" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="54" y="-230.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-158.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge"><title>a&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M47.6014,-216.411C44.4864,-208.335 40.6663,-198.431 37.1654,-189.355"/>
+<polygon fill="black" stroke="black" points="40.4045,-188.027 33.5403,-179.956 33.8735,-190.546 40.4045,-188.027"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- b&#45;&gt;c -->
+<g id="edge2" class="edge"><title>b&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M27,-143.697C27,-135.983 27,-126.712 27,-118.112"/>
+<polygon fill="black" stroke="black" points="30.5001,-118.104 27,-108.104 23.5001,-118.104 30.5001,-118.104"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="54" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="54" y="-14.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- c&#45;&gt;d -->
+<g id="edge3" class="edge"><title>c&#45;&gt;d</title>
+<path fill="none" stroke="black" d="M33.3986,-72.411C36.5136,-64.3352 40.3337,-54.4312 43.8346,-45.3547"/>
+<polygon fill="black" stroke="black" points="47.1265,-46.5458 47.4597,-35.9562 40.5955,-44.0267 47.1265,-46.5458"/>
+</g>
+<!-- d&#45;&gt;a -->
+<g id="edge4" class="edge"><title>d&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M57.6538,-36.0925C59.6758,-46.4315 61.9808,-59.9098 63,-72 67.0322,-119.83 67.0322,-132.17 63,-180 62.2834,-188.501 60.9311,-197.688 59.4884,-205.988"/>
+<polygon fill="black" stroke="black" points="56.0309,-205.438 57.6538,-215.908 62.9142,-206.711 56.0309,-205.438"/>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 4: Full Digraph</h2>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="189pt" height="305pt"
+ viewBox="0.00 0.00 189.00 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-301 185,-301 185,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-279" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-275.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="34" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="34" y="-14.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge"><title>a&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M26.0398,-260.96C25.3152,-247.21 24.3829,-227.367 24,-210 22.711,-151.535 27.9283,-83.1163 31.3099,-46.1094"/>
+<polygon fill="black" stroke="black" points="34.7987,-46.3919 32.2496,-36.1083 27.8294,-45.737 34.7987,-46.3919"/>
+<text text-anchor="middle" x="33" y="-144.8" font-family="Times,serif" font-size="14.00">0.2</text>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="60" cy="-192" rx="27" ry="18"/>
+<text text-anchor="middle" x="60" y="-188.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a&#45;&gt;c -->
+<g id="edge2" class="edge"><title>a&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M33.5197,-261.207C38.1751,-249.216 44.5284,-232.851 49.8449,-219.157"/>
+<polygon fill="black" stroke="black" points="53.1373,-220.347 53.4938,-209.758 46.6118,-217.814 53.1373,-220.347"/>
+<text text-anchor="middle" x="54" y="-231.8" font-family="Times,serif" font-size="14.00">0.4</text>
+</g>
+<!-- c&#45;&gt;b -->
+<g id="edge3" class="edge"><title>c&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M57.412,-173.879C52.8955,-144.001 43.5403,-82.1129 38.1227,-46.2736"/>
+<polygon fill="black" stroke="black" points="41.533,-45.4161 36.5776,-36.0516 34.6116,-46.4624 41.533,-45.4161"/>
+<text text-anchor="middle" x="58" y="-101.3" font-family="Times,serif" font-size="14.00">0.6</text>
+</g>
+<!-- e -->
+<g id="node4" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="118" cy="-105" rx="27" ry="18"/>
+<text text-anchor="middle" x="118" y="-101.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- c&#45;&gt;e -->
+<g id="edge4" class="edge"><title>c&#45;&gt;e</title>
+<path fill="none" stroke="black" d="M70.6381,-175.41C79.2503,-162.788 91.5328,-144.788 101.432,-130.281"/>
+<polygon fill="black" stroke="black" points="104.488,-132.012 107.233,-121.779 98.7054,-128.067 104.488,-132.012"/>
+<text text-anchor="middle" x="101" y="-144.8" font-family="Times,serif" font-size="14.00">0.6</text>
+</g>
+<!-- e&#45;&gt;b -->
+<g id="edge6" class="edge"><title>e&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M103.751,-89.5809C90.5968,-76.2706 70.8701,-56.309 55.7482,-41.0071"/>
+<polygon fill="black" stroke="black" points="57.838,-38.1424 48.3194,-33.4898 52.859,-43.0628 57.838,-38.1424"/>
+<text text-anchor="middle" x="90" y="-57.8" font-family="Times,serif" font-size="14.00">0.7</text>
+</g>
+<!-- e&#45;&gt;e -->
+<g id="edge5" class="edge"><title>e&#45;&gt;e</title>
+<path fill="none" stroke="black" d="M142.532,-112.752C153.508,-113.49 163,-110.906 163,-105 163,-101.032 158.715,-98.5632 152.574,-97.5944"/>
+<polygon fill="black" stroke="black" points="152.647,-94.0949 142.532,-97.248 152.406,-101.091 152.647,-94.0949"/>
+<text text-anchor="middle" x="172" y="-101.3" font-family="Times,serif" font-size="14.00">0.1</text>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 5: Showing A Path</h2>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="127pt" height="404pt"
+ viewBox="0.00 0.00 127.00 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 123,-400 123,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="92" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="92" y="-374.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="65" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="65" y="-302.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="red" stroke-width="3" d="M85.6014,-360.411C81.3597,-349.414 75.8106,-335.027 71.5403,-323.956"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="82" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="82" y="-158.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge6" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M95.6538,-359.908C97.6758,-349.569 99.9808,-336.09 101,-324 105.445,-271.274 93.1145,-209.161 86.2504,-179.884"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-230.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge2" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M56.1865,-288.765C50.0475,-277.456 41.8942,-262.437 35.7657,-251.147"/>
+</g>
+<!-- b&#45;&#45;d -->
+<g id="edge7" class="edge"><title>b&#45;&#45;d</title>
+<path fill="none" stroke="red" stroke-width="3" d="M67.0506,-287.871C70.3181,-260.578 76.6701,-207.52 79.9421,-180.189"/>
+</g>
+<!-- c&#45;&#45;d -->
+<g id="edge3" class="edge"><title>c&#45;&#45;d</title>
+<path fill="none" stroke="red" stroke-width="3" d="M38.9342,-217.811C48.1595,-206.07 60.8696,-189.893 70.0891,-178.159"/>
+</g>
+<!-- f -->
+<g id="node6" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="54" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="54" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- c&#45;&#45;f -->
+<g id="edge8" class="edge"><title>c&#45;&#45;f</title>
+<path fill="none" stroke="red" stroke-width="3" d="M28.8684,-215.585C32.0815,-186.026 38.9872,-124.163 46,-72 47.6119,-60.0106 49.6497,-46.5306 51.2652,-36.1657"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="82" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="82" y="-86.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- d&#45;&#45;e -->
+<g id="edge4" class="edge"><title>d&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M82,-143.697C82,-132.846 82,-118.917 82,-108.104"/>
+</g>
+<!-- e&#45;&#45;f -->
+<g id="edge5" class="edge"><title>e&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M75.3644,-72.411C70.901,-61.2524 65.0414,-46.6036 60.588,-35.4699"/>
+</g>
+</g>
+</svg>
+</div>
+<p><strong>Note that there’s also a shorthand method as follows:</strong></p>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="134pt" height="332pt"
+ viewBox="0.00 0.00 134.00 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 130,-328 130,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="71" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="71" y="-302.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="99" y="-230.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="red" stroke-width="3" d="M77.6356,-288.411C82.099,-277.252 87.9586,-262.604 92.412,-251.47"/>
+</g>
+<!-- d -->
+<g id="node3" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="44" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="44" y="-158.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge8" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M67.7432,-287.871C62.5536,-260.578 52.4652,-207.52 47.2684,-180.189"/>
+</g>
+<!-- b&#45;&#45;d -->
+<g id="edge2" class="edge"><title>b&#45;&#45;d</title>
+<path fill="none" stroke="red" stroke-width="3" d="M87.0658,-217.811C77.8405,-206.07 65.1304,-189.893 55.9109,-178.159"/>
+</g>
+<!-- c -->
+<g id="node4" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="99" y="-86.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge5" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M99,-215.871C99,-188.578 99,-135.52 99,-108.189"/>
+</g>
+<!-- d&#45;&#45;c -->
+<g id="edge3" class="edge"><title>d&#45;&#45;c</title>
+<path fill="none" stroke="red" stroke-width="3" d="M55.9342,-145.811C65.1595,-134.07 77.8696,-117.893 87.0891,-106.159"/>
+</g>
+<!-- e -->
+<g id="node6" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- d&#45;&#45;e -->
+<g id="edge6" class="edge"><title>d&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M39.8848,-144.055C37.2513,-133.211 33.8444,-119.183 31.1954,-108.275"/>
+</g>
+<!-- f -->
+<g id="node5" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="63" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="63" y="-14.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- c&#45;&#45;f -->
+<g id="edge4" class="edge"><title>c&#45;&#45;f</title>
+<path fill="none" stroke="red" stroke-width="3" d="M90.6504,-72.7646C84.8345,-61.456 77.1103,-46.4367 71.3043,-35.1473"/>
+</g>
+<!-- e&#45;&#45;f -->
+<g id="edge7" class="edge"><title>e&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M35.3496,-72.7646C41.1655,-61.456 48.8897,-46.4367 54.6957,-35.1473"/>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 6: Subgraphs</h2>
+<p>Please note there are some quirks here, First the name of the subgraphs are important, to be visually separated they must be prefixed with cluster_ as shown below, and second only the DOT and FDP layout methods seem to support subgraphs (See the graph generation page for more information on the layout methods)</p>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="195pt" height="318pt"
+ viewBox="0.00 0.00 195.00 318.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 314)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-314 191,-314 191,4 -4,4"/>
+<g id="clust1" class="cluster"><title>cluster_0</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-302 90,-302 90,-8 8,-8"/>
+<text text-anchor="middle" x="49" y="-286.8" font-family="Times,serif" font-size="14.00">Subgraph A</text>
+</g>
+<g id="clust2" class="cluster"><title>cluster_1</title>
+<polygon fill="none" stroke="black" points="98,-152 98,-227 179,-227 179,-152 98,-152"/>
+<text text-anchor="middle" x="138.5" y="-211.8" font-family="Times,serif" font-size="14.00">Subgraph B</text>
+</g>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="55" cy="-253" rx="27" ry="18"/>
+<text text-anchor="middle" x="55" y="-249.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="55" cy="-178" rx="27" ry="18"/>
+<text text-anchor="middle" x="55" y="-174.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge"><title>a&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M55,-234.7C55,-226.245 55,-215.869 55,-206.373"/>
+<polygon fill="black" stroke="black" points="58.5001,-206.176 55,-196.176 51.5001,-206.176 58.5001,-206.176"/>
+</g>
+<!-- f -->
+<g id="node5" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="133" cy="-178" rx="27" ry="18"/>
+<text text-anchor="middle" x="133" y="-174.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- a&#45;&gt;f -->
+<g id="edge4" class="edge"><title>a&#45;&gt;f</title>
+<path fill="none" stroke="black" d="M75.3145,-240.688C81.6071,-236.746 88.3628,-232.037 94,-227 101.963,-219.885 109.625,-211.053 116.018,-202.913"/>
+<polygon fill="black" stroke="black" points="118.93,-204.866 122.18,-194.782 113.351,-200.638 118.93,-204.866"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="55" cy="-106" rx="27" ry="18"/>
+<text text-anchor="middle" x="55" y="-102.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- b&#45;&gt;c -->
+<g id="edge2" class="edge"><title>b&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M55,-159.697C55,-151.983 55,-142.712 55,-134.112"/>
+<polygon fill="black" stroke="black" points="58.5001,-134.104 55,-124.104 51.5001,-134.104 58.5001,-134.104"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="55" cy="-34" rx="27" ry="18"/>
+<text text-anchor="middle" x="55" y="-30.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- c&#45;&gt;d -->
+<g id="edge3" class="edge"><title>c&#45;&gt;d</title>
+<path fill="none" stroke="black" d="M55,-87.6966C55,-79.9827 55,-70.7125 55,-62.1124"/>
+<polygon fill="black" stroke="black" points="58.5001,-62.1043 55,-52.1043 51.5001,-62.1044 58.5001,-62.1043"/>
+</g>
+<!-- f&#45;&gt;c -->
+<g id="edge5" class="edge"><title>f&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M117.59,-163.17C106.266,-153.008 90.691,-139.03 77.9113,-127.561"/>
+<polygon fill="black" stroke="black" points="80.1584,-124.875 70.3783,-120.801 75.483,-130.085 80.1584,-124.875"/>
+</g>
+</g>
+</svg>
+</div>
+<p>Another Example of a Subgraph, In this example I group nodes together seperately from their edges, And also uses the graph attribute splines=line; to specify that edges should be drawn only as straight lines, no curves allowed.</p>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="238pt" height="182pt"
+ viewBox="0.00 0.00 238.00 182.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 178)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-178 234,-178 234,4 -4,4"/>
+<g id="clust1" class="cluster"><title>cluster_0</title>
+<polygon fill="none" stroke="black" points="8,-91 8,-166 222,-166 222,-91 8,-91"/>
+<text text-anchor="middle" x="115" y="-150.8" font-family="Times,serif" font-size="14.00">Subgraph A</text>
+</g>
+<g id="clust2" class="cluster"><title>cluster_1</title>
+<polygon fill="none" stroke="black" points="26,-8 26,-83 168,-83 168,-8 26,-8"/>
+<text text-anchor="middle" x="97" y="-67.8" font-family="Times,serif" font-size="14.00">Subgraph B</text>
+</g>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="115" cy="-117" rx="27" ry="18"/>
+<text text-anchor="middle" x="115" y="-113.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="133" cy="-34" rx="27" ry="18"/>
+<text text-anchor="middle" x="133" y="-30.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge2" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M118.817,-98.822C121.893,-84.9831 126.193,-65.6332 129.25,-51.8755"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="61" cy="-34" rx="27" ry="18"/>
+<text text-anchor="middle" x="61" y="-30.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- a&#45;&#45;e -->
+<g id="edge1" class="edge"><title>a&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M104.588,-100.382C95.0874,-86.1311 81.1123,-65.1685 71.564,-50.846"/>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-117" rx="27" ry="18"/>
+<text text-anchor="middle" x="43" y="-113.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- b&#45;&#45;d -->
+<g id="edge3" class="edge"><title>b&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M58.6768,-101.891C75.1957,-87.0239 101.052,-63.7532 117.503,-48.9474"/>
+</g>
+<!-- b&#45;&#45;e -->
+<g id="edge4" class="edge"><title>b&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M46.8173,-98.822C49.8926,-84.9831 54.1926,-65.6332 57.2499,-51.8755"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="187" cy="-117" rx="27" ry="18"/>
+<text text-anchor="middle" x="187" y="-113.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- c&#45;&#45;d -->
+<g id="edge5" class="edge"><title>c&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M176.588,-100.382C167.087,-86.1311 153.112,-65.1685 143.564,-50.846"/>
+</g>
+<!-- c&#45;&#45;e -->
+<g id="edge6" class="edge"><title>c&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M168.137,-103.873C144.383,-88.6033 103.807,-62.5186 79.9924,-47.2094"/>
+</g>
+</g>
+</svg>
+</div>
+<h2>Example 7: Large Graphs</h2>
+<p>To make it easier to input large graph descriptions, One may group edges together with a set of braces, It may also help to lay the graph out left to right instead of top to bottom.</p>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="1142pt" height="201pt"
+ viewBox="0.00 0.00 1142.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 197)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-197 1138,-197 1138,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-89" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-85.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-43" rx="27" ry="18"/>
+<text text-anchor="middle" x="117" y="-39.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="black" d="M48.8548,-78.0986C62.8827,-70.7659 81.2984,-61.1395 95.2949,-53.8231"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-81" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-77.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a&#45;&#45;c -->
+<g id="edge2" class="edge"><title>a&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M54.2645,-87.8196C88.0151,-86.3027 146.256,-83.6851 179.918,-82.1722"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-135" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-131.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge3" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M52.3769,-95.2997C86.3684,-104.084 147.646,-119.92 181.633,-128.703"/>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge4" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M140.206,-52.589C153.546,-58.3495 170.462,-65.6541 183.801,-71.4141"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-35" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-31.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- b&#45;&#45;e -->
+<g id="edge5" class="edge"><title>b&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M144.265,-41.8196C178.015,-40.3027 236.256,-37.6851 269.918,-36.1722"/>
+</g>
+<!-- c&#45;&#45;e -->
+<g id="edge6" class="edge"><title>c&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M228.855,-70.0986C242.883,-62.7659 261.298,-53.1395 275.295,-45.8231"/>
+</g>
+<!-- f -->
+<g id="node6" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-100" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-96.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- c&#45;&#45;f -->
+<g id="edge7" class="edge"><title>c&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M232.982,-86.3938C244.872,-88.9611 259.057,-92.0237 270.956,-94.5927"/>
+</g>
+<!-- d&#45;&#45;f -->
+<g id="edge8" class="edge"><title>d&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M230.662,-125.987C243.801,-120.761 260.289,-114.203 273.415,-108.983"/>
+</g>
+<!-- g -->
+<g id="node7" class="node"><title>g</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-175" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-171.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- d&#45;&#45;g -->
+<g id="edge9" class="edge"><title>d&#45;&#45;g</title>
+<path fill="none" stroke="black" d="M232.75,-140.562C266.662,-148.182 327.222,-161.791 361.174,-169.421"/>
+</g>
+<!-- h -->
+<g id="node8" class="node"><title>h</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-29" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-25.3" font-family="Times,serif" font-size="14.00">h</text>
+</g>
+<!-- e&#45;&#45;h -->
+<g id="edge10" class="edge"><title>e&#45;&#45;h</title>
+<path fill="none" stroke="black" d="M323.927,-33.2323C335.283,-32.4579 348.584,-31.5511 359.954,-30.7758"/>
+</g>
+<!-- f&#45;&#45;g -->
+<g id="edge11" class="edge"><title>f&#45;&#45;g</title>
+<path fill="none" stroke="black" d="M314.552,-114.107C330.285,-127.516 353.814,-147.568 369.522,-160.956"/>
+</g>
+<!-- f&#45;&#45;h -->
+<g id="edge12" class="edge"><title>f&#45;&#45;h</title>
+<path fill="none" stroke="black" d="M314.967,-86.3105C330.55,-73.738 353.518,-55.2067 369.085,-42.6475"/>
+</g>
+<!-- i -->
+<g id="node9" class="node"><title>i</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-83" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-79.3" font-family="Times,serif" font-size="14.00">i</text>
+</g>
+<!-- f&#45;&#45;i -->
+<g id="edge13" class="edge"><title>f&#45;&#45;i</title>
+<path fill="none" stroke="black" d="M323.453,-95.0829C335.23,-92.8079 349.176,-90.1137 360.908,-87.8473"/>
+</g>
+<!-- j -->
+<g id="node10" class="node"><title>j</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-129" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-125.3" font-family="Times,serif" font-size="14.00">j</text>
+</g>
+<!-- f&#45;&#45;j -->
+<g id="edge14" class="edge"><title>f&#45;&#45;j</title>
+<path fill="none" stroke="black" d="M323.503,-104.155C357.341,-109.668 416.73,-119.344 450.544,-124.853"/>
+</g>
+<!-- k -->
+<g id="node11" class="node"><title>k</title>
+<ellipse fill="none" stroke="black" cx="567" cy="-175" rx="27" ry="18"/>
+<text text-anchor="middle" x="567" y="-171.3" font-family="Times,serif" font-size="14.00">k</text>
+</g>
+<!-- g&#45;&#45;k -->
+<g id="edge15" class="edge"><title>g&#45;&#45;k</title>
+<path fill="none" stroke="black" d="M414.265,-175C448.015,-175 506.256,-175 539.918,-175"/>
+</g>
+<!-- o -->
+<g id="node12" class="node"><title>o</title>
+<ellipse fill="none" stroke="black" cx="657" cy="-37" rx="27" ry="18"/>
+<text text-anchor="middle" x="657" y="-33.3" font-family="Times,serif" font-size="14.00">o</text>
+</g>
+<!-- h&#45;&#45;o -->
+<g id="edge16" class="edge"><title>h&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M410.881,-20.2048C422.422,-16.2296 436.751,-11.9846 450,-10 515.815,-0.14178 593.763,-18.5174 632.17,-29.5509"/>
+</g>
+<!-- l -->
+<g id="node13" class="node"><title>l</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-37" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-33.3" font-family="Times,serif" font-size="14.00">l</text>
+</g>
+<!-- h&#45;&#45;l -->
+<g id="edge17" class="edge"><title>h&#45;&#45;l</title>
+<path fill="none" stroke="black" d="M413.927,-31.357C425.283,-32.3894 438.584,-33.5986 449.954,-34.6322"/>
+</g>
+<!-- i&#45;&#45;j -->
+<g id="edge18" class="edge"><title>i&#45;&#45;j</title>
+<path fill="none" stroke="black" d="M408.855,-93.9014C422.883,-101.234 441.298,-110.861 455.295,-118.177"/>
+</g>
+<!-- i&#45;&#45;l -->
+<g id="edge19" class="edge"><title>i&#45;&#45;l</title>
+<path fill="none" stroke="black" d="M408.855,-72.0986C422.883,-64.7659 441.298,-55.1395 455.295,-47.8231"/>
+</g>
+<!-- m -->
+<g id="node14" class="node"><title>m</title>
+<ellipse fill="none" stroke="black" cx="567" cy="-83" rx="27" ry="18"/>
+<text text-anchor="middle" x="567" y="-79.3" font-family="Times,serif" font-size="14.00">m</text>
+</g>
+<!-- i&#45;&#45;m -->
+<g id="edge20" class="edge"><title>i&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M414.265,-83C448.015,-83 506.256,-83 539.918,-83"/>
+</g>
+<!-- j&#45;&#45;k -->
+<g id="edge21" class="edge"><title>j&#45;&#45;k</title>
+<path fill="none" stroke="black" d="M498.855,-139.901C512.883,-147.234 531.298,-156.861 545.295,-164.177"/>
+</g>
+<!-- j&#45;&#45;m -->
+<g id="edge22" class="edge"><title>j&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M498.855,-118.099C512.883,-110.766 531.298,-101.139 545.295,-93.8231"/>
+</g>
+<!-- n -->
+<g id="node15" class="node"><title>n</title>
+<ellipse fill="none" stroke="black" cx="657" cy="-129" rx="27" ry="18"/>
+<text text-anchor="middle" x="657" y="-125.3" font-family="Times,serif" font-size="14.00">n</text>
+</g>
+<!-- j&#45;&#45;n -->
+<g id="edge23" class="edge"><title>j&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M504.265,-129C538.015,-129 596.256,-129 629.918,-129"/>
+</g>
+<!-- k&#45;&#45;n -->
+<g id="edge24" class="edge"><title>k&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M588.855,-164.099C602.883,-156.766 621.298,-147.139 635.295,-139.823"/>
+</g>
+<!-- r -->
+<g id="node16" class="node"><title>r</title>
+<ellipse fill="none" stroke="black" cx="927" cy="-154" rx="27" ry="18"/>
+<text text-anchor="middle" x="927" y="-150.3" font-family="Times,serif" font-size="14.00">r</text>
+</g>
+<!-- k&#45;&#45;r -->
+<g id="edge25" class="edge"><title>k&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M594.147,-173.819C645.762,-171.438 764.386,-165.708 864,-159 875.852,-158.202 888.966,-157.167 900.069,-156.245"/>
+</g>
+<!-- p -->
+<g id="node17" class="node"><title>p</title>
+<ellipse fill="none" stroke="black" cx="747" cy="-64" rx="27" ry="18"/>
+<text text-anchor="middle" x="747" y="-60.3" font-family="Times,serif" font-size="14.00">p</text>
+</g>
+<!-- o&#45;&#45;p -->
+<g id="edge33" class="edge"><title>o&#45;&#45;p</title>
+<path fill="none" stroke="black" d="M682.046,-44.3779C694.565,-48.2188 709.818,-52.8986 722.287,-56.7245"/>
+</g>
+<!-- s -->
+<g id="node19" class="node"><title>s</title>
+<ellipse fill="none" stroke="black" cx="837" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="837" y="-14.3" font-family="Times,serif" font-size="14.00">s</text>
+</g>
+<!-- o&#45;&#45;s -->
+<g id="edge34" class="edge"><title>o&#45;&#45;s</title>
+<path fill="none" stroke="black" d="M683.883,-34.2372C717.63,-30.635 776.323,-24.37 810.086,-20.7661"/>
+</g>
+<!-- l&#45;&#45;o -->
+<g id="edge26" class="edge"><title>l&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M504.265,-37C538.015,-37 596.256,-37 629.918,-37"/>
+</g>
+<!-- l&#45;&#45;m -->
+<g id="edge27" class="edge"><title>l&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M498.855,-47.9014C512.883,-55.2341 531.298,-64.8605 545.295,-72.1769"/>
+</g>
+<!-- m&#45;&#45;o -->
+<g id="edge28" class="edge"><title>m&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M588.855,-72.0986C602.883,-64.7659 621.298,-55.1395 635.295,-47.8231"/>
+</g>
+<!-- m&#45;&#45;n -->
+<g id="edge29" class="edge"><title>m&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M588.855,-93.9014C602.883,-101.234 621.298,-110.861 635.295,-118.177"/>
+</g>
+<!-- m&#45;&#45;p -->
+<g id="edge30" class="edge"><title>m&#45;&#45;p</title>
+<path fill="none" stroke="black" d="M593.883,-80.2372C627.63,-76.635 686.323,-70.37 720.086,-66.7661"/>
+</g>
+<!-- n&#45;&#45;r -->
+<g id="edge31" class="edge"><title>n&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M684.185,-131.443C735.552,-136.234 848.969,-146.814 900.103,-151.584"/>
+</g>
+<!-- q -->
+<g id="node18" class="node"><title>q</title>
+<ellipse fill="none" stroke="black" cx="837" cy="-110" rx="27" ry="18"/>
+<text text-anchor="middle" x="837" y="-106.3" font-family="Times,serif" font-size="14.00">q</text>
+</g>
+<!-- n&#45;&#45;q -->
+<g id="edge32" class="edge"><title>n&#45;&#45;q</title>
+<path fill="none" stroke="black" d="M683.883,-126.237C717.63,-122.635 776.323,-116.37 810.086,-112.766"/>
+</g>
+<!-- t -->
+<g id="node20" class="node"><title>t</title>
+<ellipse fill="none" stroke="black" cx="1017" cy="-87" rx="27" ry="18"/>
+<text text-anchor="middle" x="1017" y="-83.3" font-family="Times,serif" font-size="14.00">t</text>
+</g>
+<!-- r&#45;&#45;t -->
+<g id="edge40" class="edge"><title>r&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M945.386,-140.763C960.814,-129.017 983.233,-111.947 998.65,-100.21"/>
+</g>
+<!-- p&#45;&#45;q -->
+<g id="edge35" class="edge"><title>p&#45;&#45;q</title>
+<path fill="none" stroke="black" d="M768.855,-74.9014C782.883,-82.2341 801.298,-91.8605 815.295,-99.1769"/>
+</g>
+<!-- p&#45;&#45;s -->
+<g id="edge36" class="edge"><title>p&#45;&#45;s</title>
+<path fill="none" stroke="black" d="M768.855,-53.0986C782.883,-45.7659 801.298,-36.1395 815.295,-28.8231"/>
+</g>
+<!-- p&#45;&#45;t -->
+<g id="edge37" class="edge"><title>p&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M774.185,-66.2472C825.552,-70.6556 938.969,-80.3892 990.103,-84.7775"/>
+</g>
+<!-- q&#45;&#45;r -->
+<g id="edge38" class="edge"><title>q&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M859.302,-120.651C873.138,-127.569 891.097,-136.549 904.894,-143.447"/>
+</g>
+<!-- q&#45;&#45;t -->
+<g id="edge39" class="edge"><title>q&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M863.883,-106.656C897.727,-102.283 956.659,-94.6677 990.375,-90.3111"/>
+</g>
+<!-- z -->
+<g id="node21" class="node"><title>z</title>
+<ellipse fill="none" stroke="black" cx="1107" cy="-54" rx="27" ry="18"/>
+<text text-anchor="middle" x="1107" y="-50.3" font-family="Times,serif" font-size="14.00">z</text>
+</g>
+<!-- s&#45;&#45;z -->
+<g id="edge41" class="edge"><title>s&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M863.697,-21.4518C914.923,-28.3329 1029.22,-43.6861 1080.38,-50.5586"/>
+</g>
+<!-- t&#45;&#45;z -->
+<g id="edge42" class="edge"><title>t&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M1041.12,-78.3296C1054.06,-73.4792 1070.12,-67.4535 1083.03,-62.6125"/>
+</g>
+</g>
+</svg>
+</div>
+<p>Another feature that can make large graphs manageable is to group nodes together at the same rank, the graph above for example is copied from a specific assignment, but doesn’t look the same because of how the nodes are shifted around to fit in a more space optimal, but less visually simple way. We can make it look much more similar by grouping the nodes together for display as is done in the assignment with rank, as follows</p>
+<div class="remark-draw-dot"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="692pt" height="229pt"
+ viewBox="0.00 0.00 692.00 229.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 225)">
+<title>%3</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-225 688,-225 688,4 -4,4"/>
+<!-- a -->
+<g id="node1" class="node"><title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-149" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-145.3" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node"><title>b</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-203" rx="27" ry="18"/>
+<text text-anchor="middle" x="117" y="-199.3" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&#45;b -->
+<g id="edge1" class="edge"><title>a&#45;&#45;b</title>
+<path fill="none" stroke="black" d="M47.5301,-160.984C62.1132,-169.933 81.9546,-182.108 96.5245,-191.049"/>
+</g>
+<!-- c -->
+<g id="node3" class="node"><title>c</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-149" rx="27" ry="18"/>
+<text text-anchor="middle" x="117" y="-145.3" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a&#45;&#45;c -->
+<g id="edge2" class="edge"><title>a&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M54.4029,-149C65.6421,-149 78.7152,-149 89.919,-149"/>
+</g>
+<!-- d -->
+<g id="node4" class="node"><title>d</title>
+<ellipse fill="none" stroke="black" cx="117" cy="-95" rx="27" ry="18"/>
+<text text-anchor="middle" x="117" y="-91.3" font-family="Times,serif" font-size="14.00">d</text>
+</g>
+<!-- a&#45;&#45;d -->
+<g id="edge3" class="edge"><title>a&#45;&#45;d</title>
+<path fill="none" stroke="black" d="M47.5301,-137.016C62.1132,-128.067 81.9546,-115.892 96.5245,-106.951"/>
+</g>
+<!-- b&#45;&#45;c -->
+<g id="edge4" class="edge"><title>b&#45;&#45;c</title>
+<path fill="none" stroke="black" d="M117,-184.79C117,-178.907 117,-173.024 117,-167.141"/>
+</g>
+<!-- e -->
+<g id="node5" class="node"><title>e</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-203" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-199.3" font-family="Times,serif" font-size="14.00">e</text>
+</g>
+<!-- b&#45;&#45;e -->
+<g id="edge5" class="edge"><title>b&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M144.403,-203C155.642,-203 168.715,-203 179.919,-203"/>
+</g>
+<!-- c&#45;&#45;e -->
+<g id="edge6" class="edge"><title>c&#45;&#45;e</title>
+<path fill="none" stroke="black" d="M137.53,-160.984C152.113,-169.933 171.955,-182.108 186.525,-191.049"/>
+</g>
+<!-- f -->
+<g id="node6" class="node"><title>f</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-149" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-145.3" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- c&#45;&#45;f -->
+<g id="edge7" class="edge"><title>c&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M144.403,-149C155.642,-149 168.715,-149 179.919,-149"/>
+</g>
+<!-- d&#45;&#45;f -->
+<g id="edge8" class="edge"><title>d&#45;&#45;f</title>
+<path fill="none" stroke="black" d="M137.53,-106.984C152.113,-115.933 171.955,-128.108 186.525,-137.049"/>
+</g>
+<!-- g -->
+<g id="node7" class="node"><title>g</title>
+<ellipse fill="none" stroke="black" cx="207" cy="-95" rx="27" ry="18"/>
+<text text-anchor="middle" x="207" y="-91.3" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- d&#45;&#45;g -->
+<g id="edge9" class="edge"><title>d&#45;&#45;g</title>
+<path fill="none" stroke="black" d="M144.403,-95C155.642,-95 168.715,-95 179.919,-95"/>
+</g>
+<!-- h -->
+<g id="node8" class="node"><title>h</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-203" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-199.3" font-family="Times,serif" font-size="14.00">h</text>
+</g>
+<!-- e&#45;&#45;h -->
+<g id="edge10" class="edge"><title>e&#45;&#45;h</title>
+<path fill="none" stroke="black" d="M234.403,-203C245.642,-203 258.715,-203 269.919,-203"/>
+</g>
+<!-- f&#45;&#45;g -->
+<g id="edge11" class="edge"><title>f&#45;&#45;g</title>
+<path fill="none" stroke="black" d="M207,-130.79C207,-124.907 207,-119.024 207,-113.141"/>
+</g>
+<!-- f&#45;&#45;h -->
+<g id="edge12" class="edge"><title>f&#45;&#45;h</title>
+<path fill="none" stroke="black" d="M227.53,-160.984C242.113,-169.933 261.955,-182.108 276.525,-191.049"/>
+</g>
+<!-- i -->
+<g id="node9" class="node"><title>i</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-149" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-145.3" font-family="Times,serif" font-size="14.00">i</text>
+</g>
+<!-- f&#45;&#45;i -->
+<g id="edge13" class="edge"><title>f&#45;&#45;i</title>
+<path fill="none" stroke="black" d="M234.403,-149C245.642,-149 258.715,-149 269.919,-149"/>
+</g>
+<!-- j -->
+<g id="node10" class="node"><title>j</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-95" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-91.3" font-family="Times,serif" font-size="14.00">j</text>
+</g>
+<!-- f&#45;&#45;j -->
+<g id="edge14" class="edge"><title>f&#45;&#45;j</title>
+<path fill="none" stroke="black" d="M227.53,-137.016C242.113,-128.067 261.955,-115.892 276.525,-106.951"/>
+</g>
+<!-- k -->
+<g id="node11" class="node"><title>k</title>
+<ellipse fill="none" stroke="black" cx="297" cy="-41" rx="27" ry="18"/>
+<text text-anchor="middle" x="297" y="-37.3" font-family="Times,serif" font-size="14.00">k</text>
+</g>
+<!-- g&#45;&#45;k -->
+<g id="edge15" class="edge"><title>g&#45;&#45;k</title>
+<path fill="none" stroke="black" d="M227.53,-83.0156C242.113,-74.0669 261.955,-61.8915 276.525,-52.9508"/>
+</g>
+<!-- o -->
+<g id="node12" class="node"><title>o</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-180" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-176.3" font-family="Times,serif" font-size="14.00">o</text>
+</g>
+<!-- h&#45;&#45;o -->
+<g id="edge16" class="edge"><title>h&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M323.642,-207.351C347.348,-210.559 383.422,-213.369 414,-207 428.597,-203.96 443.97,-197.291 455.756,-191.342"/>
+</g>
+<!-- l -->
+<g id="node13" class="node"><title>l</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-180" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-176.3" font-family="Times,serif" font-size="14.00">l</text>
+</g>
+<!-- h&#45;&#45;l -->
+<g id="edge17" class="edge"><title>h&#45;&#45;l</title>
+<path fill="none" stroke="black" d="M322.513,-196.593C334.718,-193.403 349.431,-189.558 361.619,-186.372"/>
+</g>
+<!-- i&#45;&#45;j -->
+<g id="edge18" class="edge"><title>i&#45;&#45;j</title>
+<path fill="none" stroke="black" d="M297,-130.79C297,-124.907 297,-119.024 297,-113.141"/>
+</g>
+<!-- i&#45;&#45;l -->
+<g id="edge19" class="edge"><title>i&#45;&#45;l</title>
+<path fill="none" stroke="black" d="M321.121,-157.145C333.954,-161.666 349.871,-167.273 362.728,-171.802"/>
+</g>
+<!-- m -->
+<g id="node14" class="node"><title>m</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-126" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-122.3" font-family="Times,serif" font-size="14.00">m</text>
+</g>
+<!-- i&#45;&#45;m -->
+<g id="edge20" class="edge"><title>i&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M322.513,-142.593C334.718,-139.403 349.431,-135.558 361.619,-132.372"/>
+</g>
+<!-- j&#45;&#45;k -->
+<g id="edge21" class="edge"><title>j&#45;&#45;k</title>
+<path fill="none" stroke="black" d="M297,-76.7902C297,-70.907 297,-65.0238 297,-59.1406"/>
+</g>
+<!-- j&#45;&#45;m -->
+<g id="edge22" class="edge"><title>j&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M321.121,-103.145C333.954,-107.666 349.871,-113.273 362.728,-117.802"/>
+</g>
+<!-- n -->
+<g id="node15" class="node"><title>n</title>
+<ellipse fill="none" stroke="black" cx="387" cy="-72" rx="27" ry="18"/>
+<text text-anchor="middle" x="387" y="-68.3" font-family="Times,serif" font-size="14.00">n</text>
+</g>
+<!-- j&#45;&#45;n -->
+<g id="edge23" class="edge"><title>j&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M322.513,-88.5932C334.718,-85.4031 349.431,-81.5578 361.619,-78.3724"/>
+</g>
+<!-- k&#45;&#45;n -->
+<g id="edge24" class="edge"><title>k&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M321.121,-49.1449C333.954,-53.6655 349.871,-59.2728 362.728,-63.8019"/>
+</g>
+<!-- r -->
+<g id="node16" class="node"><title>r</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-14.3" font-family="Times,serif" font-size="14.00">r</text>
+</g>
+<!-- k&#45;&#45;r -->
+<g id="edge25" class="edge"><title>k&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M323.883,-37.6556C357.727,-33.2825 416.659,-25.6677 450.375,-21.3111"/>
+</g>
+<!-- p -->
+<g id="node17" class="node"><title>p</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-126" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-122.3" font-family="Times,serif" font-size="14.00">p</text>
+</g>
+<!-- o&#45;&#45;p -->
+<g id="edge33" class="edge"><title>o&#45;&#45;p</title>
+<path fill="none" stroke="black" d="M477,-161.79C477,-155.907 477,-150.024 477,-144.141"/>
+</g>
+<!-- s -->
+<g id="node19" class="node"><title>s</title>
+<ellipse fill="none" stroke="black" cx="567" cy="-126" rx="27" ry="18"/>
+<text text-anchor="middle" x="567" y="-122.3" font-family="Times,serif" font-size="14.00">s</text>
+</g>
+<!-- o&#45;&#45;s -->
+<g id="edge34" class="edge"><title>o&#45;&#45;s</title>
+<path fill="none" stroke="black" d="M497.53,-168.016C512.113,-159.067 531.955,-146.892 546.525,-137.951"/>
+</g>
+<!-- l&#45;&#45;o -->
+<g id="edge26" class="edge"><title>l&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M414.403,-180C425.642,-180 438.715,-180 449.919,-180"/>
+</g>
+<!-- l&#45;&#45;m -->
+<g id="edge27" class="edge"><title>l&#45;&#45;m</title>
+<path fill="none" stroke="black" d="M387,-161.79C387,-155.907 387,-150.024 387,-144.141"/>
+</g>
+<!-- m&#45;&#45;o -->
+<g id="edge28" class="edge"><title>m&#45;&#45;o</title>
+<path fill="none" stroke="black" d="M407.53,-137.984C422.113,-146.933 441.955,-159.108 456.525,-168.049"/>
+</g>
+<!-- m&#45;&#45;n -->
+<g id="edge29" class="edge"><title>m&#45;&#45;n</title>
+<path fill="none" stroke="black" d="M387,-107.79C387,-101.907 387,-96.0238 387,-90.1406"/>
+</g>
+<!-- m&#45;&#45;p -->
+<g id="edge30" class="edge"><title>m&#45;&#45;p</title>
+<path fill="none" stroke="black" d="M414.403,-126C425.642,-126 438.715,-126 449.919,-126"/>
+</g>
+<!-- n&#45;&#45;r -->
+<g id="edge31" class="edge"><title>n&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M407.53,-60.0156C422.113,-51.0669 441.955,-38.8915 456.525,-29.9508"/>
+</g>
+<!-- q -->
+<g id="node18" class="node"><title>q</title>
+<ellipse fill="none" stroke="black" cx="477" cy="-72" rx="27" ry="18"/>
+<text text-anchor="middle" x="477" y="-68.3" font-family="Times,serif" font-size="14.00">q</text>
+</g>
+<!-- n&#45;&#45;q -->
+<g id="edge32" class="edge"><title>n&#45;&#45;q</title>
+<path fill="none" stroke="black" d="M414.403,-72C425.642,-72 438.715,-72 449.919,-72"/>
+</g>
+<!-- t -->
+<g id="node20" class="node"><title>t</title>
+<ellipse fill="none" stroke="black" cx="567" cy="-72" rx="27" ry="18"/>
+<text text-anchor="middle" x="567" y="-68.3" font-family="Times,serif" font-size="14.00">t</text>
+</g>
+<!-- r&#45;&#45;t -->
+<g id="edge40" class="edge"><title>r&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M497.53,-29.9844C512.113,-38.9331 531.955,-51.1085 546.525,-60.0492"/>
+</g>
+<!-- p&#45;&#45;q -->
+<g id="edge35" class="edge"><title>p&#45;&#45;q</title>
+<path fill="none" stroke="black" d="M477,-107.79C477,-101.907 477,-96.0238 477,-90.1406"/>
+</g>
+<!-- p&#45;&#45;s -->
+<g id="edge36" class="edge"><title>p&#45;&#45;s</title>
+<path fill="none" stroke="black" d="M504.403,-126C515.642,-126 528.715,-126 539.919,-126"/>
+</g>
+<!-- p&#45;&#45;t -->
+<g id="edge37" class="edge"><title>p&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M497.53,-114.016C512.113,-105.067 531.955,-92.8915 546.525,-83.9508"/>
+</g>
+<!-- q&#45;&#45;r -->
+<g id="edge38" class="edge"><title>q&#45;&#45;r</title>
+<path fill="none" stroke="black" d="M477,-53.7902C477,-47.907 477,-42.0238 477,-36.1406"/>
+</g>
+<!-- q&#45;&#45;t -->
+<g id="edge39" class="edge"><title>q&#45;&#45;t</title>
+<path fill="none" stroke="black" d="M504.403,-72C515.642,-72 528.715,-72 539.919,-72"/>
+</g>
+<!-- z -->
+<g id="node21" class="node"><title>z</title>
+<ellipse fill="none" stroke="black" cx="657" cy="-99" rx="27" ry="18"/>
+<text text-anchor="middle" x="657" y="-95.3" font-family="Times,serif" font-size="14.00">z</text>
+</g>
+<!-- s&#45;&#45;z -->
+<g id="edge41" class="edge"><title>s&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M592.046,-118.622C604.565,-114.781 619.818,-110.101 632.287,-106.275"/>
+</g>
+<!-- t&#45;&#45;z -->
+<g id="edge42" class="edge"><title>t&#45;&#45;z</title>
+<path fill="none" stroke="black" d="M592.046,-79.3779C604.565,-83.2188 619.818,-87.8986 632.287,-91.7245"/>
+</g>
+</g>
+</svg>
+</div></div><hr style="margin-bottom:1.75rem;" data-reactid="9"/><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0;" data-reactid="10"><li data-reactid="11"><a rel="prev" href="/gatsby-remark-draw-demo/svgbobrus/" data-reactid="12"><!-- react-text: 13 -->← <!-- /react-text --><!-- react-text: 14 -->SvgBobRus demo<!-- /react-text --></a></li></ul></div><span style="display:block;clear:both;" data-reactid="15"> </span></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-96c3fd8696067c76723e.js","99219681209289":"component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js","107818501498521":"component---src-templates-blog-post-js-3ffd030823ef9e4f7053.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-7772324a187e0c48dcd8.js","60335399758886":"path----557518bd178906f8d58a.js","210333531512890":"path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js","58553098941103":"path---graphviz-628f127593d8cbc11841.js","187897196432":"path---svgbobrus-5536908560e8a9cab685.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-0a53e8841411f64f330a.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-0d2438fc3e44c061000c.js"}/*]]>*/</script><script>
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto');
+      }
+      </script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/gatsby-remark-draw-demo/commons-6e82eaae3f56c620a9ec.js","/gatsby-remark-draw-demo/app-96c3fd8696067c76723e.js","/gatsby-remark-draw-demo/path---graphviz-628f127593d8cbc11841.js","/gatsby-remark-draw-demo/component---src-templates-blog-post-js-3ffd030823ef9e4f7053.js","/gatsby-remark-draw-demo/component---src-layouts-index-js-0d2438fc3e44c061000c.js"])/*]]>*/</script></body></html>
