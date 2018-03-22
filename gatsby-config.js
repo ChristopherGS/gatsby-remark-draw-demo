@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
+    title: 'gatsby-remark-draw plugin demo',
+    author: 'Riaan Hanekom',
+    description: 'A demo site for showing the capabilities of the gatsby-remark-draw plugin.  Based off the official starter-blog.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/gatsby-remark-draw-demo',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,6 +18,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-draw',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -30,8 +31,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-draw',
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
