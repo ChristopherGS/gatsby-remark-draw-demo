@@ -7,6 +7,7 @@ Examples taken from the [DOT pocket reference](http://graphs.grevian.org/example
 
 ## Example 1: Simple Graph
 
+
 ```dot-svg
 graph {
     a -- b;

@@ -7,7 +7,6 @@ date: "2018-03-22"
 
 Copied directly from the [SvgBobRus repo](https://github.com/ivanceras/svgbobrus).
 
-
 ```bob-svg
 Svgbob is a diagramming model
 which uses a set of typing characters
