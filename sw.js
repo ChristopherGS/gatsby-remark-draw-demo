@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/gatsby-remark-draw-demo/app-96c3fd8696067c76723e.js","04f326b85e49a2ce08a5993ecd6d1fdc"],["/gatsby-remark-draw-demo/commons-6e82eaae3f56c620a9ec.js","fafa5eabe29b9623a140b96e36e42c26"],["/gatsby-remark-draw-demo/index.html","65f7c747504cee4fe8e8bdb7f7bbcf82"],["/gatsby-remark-draw-demo/offline-plugin-app-shell-fallback/index.html","eb780c31d0b37334e8698e1934e9481b"]];
+var precacheConfig = [["/gatsby-remark-draw-demo/app-aa1ca33077ee28403f9d.js","bfa40cbaef558a5ff3adbba7f8924125"],["/gatsby-remark-draw-demo/commons-37e7ec241aad23eaba66.js","bcce8b98675f6cacbd4eabdaacc9245e"],["/gatsby-remark-draw-demo/index.html","929c66120898e9a77b37407542f5b1c9"],["/gatsby-remark-draw-demo/offline-plugin-app-shell-fallback/index.html","5c6b6e324d9bac607a948fd379b91220"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
