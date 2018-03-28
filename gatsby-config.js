@@ -18,7 +18,20 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-draw',
+          {
+            resolve: 'gatsby-remark-draw',
+            options: {
+              dot: {
+                edgeAttributes: {
+                    'arrowtail': 'empty',
+                    'arrowhead': 'empty'
+                }
+              },
+              bob: {
+                fontFamily: 'verdana'
+              }
+            }
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
