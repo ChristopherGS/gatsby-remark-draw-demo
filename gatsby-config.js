@@ -29,6 +29,10 @@ module.exports = {
               },
               bob: {
                 fontFamily: 'verdana'
+              },
+              mermaid: {
+                theme: 'forest',
+                backgroundColor: 'transparent'
               }
             }
           },
