@@ -86,7 +86,3 @@ commit
 commit
 merge newbranch
 ```
-
-```mermaid-svg
-<--
-```
