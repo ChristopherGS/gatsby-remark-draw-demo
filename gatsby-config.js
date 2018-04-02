@@ -21,7 +21,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-draw',
             options: {
+              strategy: 'img',
               dot: {
+                variableSize: true,
                 edgeAttributes: {
                     'arrowtail': 'empty',
                     'arrowhead': 'empty'
