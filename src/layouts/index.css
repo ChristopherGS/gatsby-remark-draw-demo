@@ -2,3 +2,10 @@
   max-width: 100%;
   max-height: 500px;
 }
+
+img {
+}
+
+img[title~="remark"] {
+  max-width: 100%;
+}

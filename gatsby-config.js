@@ -23,7 +23,6 @@ module.exports = {
             options: {
               strategy: 'img',
               dot: {
-                variableSize: true,
                 edgeAttributes: {
                     'arrowtail': 'empty',
                     'arrowhead': 'empty'
